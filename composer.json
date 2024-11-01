@@ -1,0 +1,31 @@
+{
+    "name": "wangta69/laravel-components",
+    "description": "Laravel Components",
+    "keywords": ["laravel", "components"],
+    "homepage": "https://www.onstory.fun/doc/programming/laravel/package.components",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Pondol",
+        "email": "wangta69@gmail.com",
+        "homepage": "https://www.onstory.fun"
+      }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+      "php": ">=7.0.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Pondol\\Components\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Pondol\\Components\\ComponentsServiceProvider"
+        ]
+      }
+    }
+  }
+  
