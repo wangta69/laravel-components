@@ -1,6 +1,6 @@
 <input 
-  type="radio"
-  @if(isset($class)) class="{{ $class }}" @endif 
+type="checkbox"
+@if(isset($class)) class="{{ $class }}" @endif 
   @if(isset($id)) id="{{ $id }}" @endif 
   @if(isset($style)) style="{{ $style }}" @endif
   name="{{ $name }}" 
