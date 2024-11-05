@@ -1,8 +1,5 @@
-<input 
-  type="radio"
-  @if(isset($class)) class="{{ $class }}" @endif 
-  @if(isset($id)) id="{{ $id }}" @endif 
-  @if(isset($style)) style="{{ $style }}" @endif
-  name="{{ $name }}" 
-  value="{{ $value }}" 
-  @if(isset($checked) && $checked == $value) checked @endif>
+@php
+$merge = ['type'=>'radio'];
+$merge['checked'] = isset($curval) && $curval == $value ? true : false;
+@endphp
+<input {{ $attributes->merge($merge)->except(['curval']) }}>

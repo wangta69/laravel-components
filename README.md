@@ -22,7 +22,7 @@ composer require wangta69/laravel-components
   id=""
   name="example" 
   value="0" 
-  checked="{{ old('example', isset($example) &&  $example ? $example :'0')}}"/>
+  curval="{{ old('example', isset($example) &&  $example ? $example :'[default value]')}}"/>
 ```
 
 ### checkbox
@@ -32,7 +32,7 @@ composer require wangta69/laravel-components
   id=""
   name="example" 
   value="0" 
-  checked="{{ old('example', isset($example) &&  $example ? $example :'0')}}"/>
+  curval= "{{  old('example', $example )}}"/>
 ```
 ### select
 ```
