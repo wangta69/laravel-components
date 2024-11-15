@@ -2,9 +2,8 @@
 namespace Pondol\Components;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Blade;
 
-class ComponentsServiceProvider extends ServiceProvider { //  implements DeferrableProvider
+class ComponentsServiceProvider extends ServiceProvider {
   /**
    * Register any application services.
    *
@@ -15,14 +14,12 @@ class ComponentsServiceProvider extends ServiceProvider { //  implements Deferra
   }
 
   /**
-     * Bootstrap any application services.exi
-     *
-     * @return void
-     */
-    //public function boot(\Illuminate\Routing\Router $router)
-  public function boot(\Illuminate\Routing\Router $router)
+   * Bootstrap any application services.exi
+   *
+   * @return void
+   */
+  public function boot()
   {
     $this->loadViewsFrom(__DIR__.'/resources/views', 'pondol');
-    // Blade::componentNamespace('Pondol\\Components\\Views\\Components', 'pondol');
   }
 }
