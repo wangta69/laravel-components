@@ -1,7 +1,11 @@
 <select {{ $attributes ->except(['options', 'option-label', 'option-value']) }}>
   @foreach($options as $k=>$v)
     @if(isset($optionLabel)) 
-    <option value="{{ $v->{$optionValue} }}" @if(isset($value) && $value->find($v->{$optionValue})) selected @endif>
+      @if(gettype($value) == 'string') 
+      <option value="{{ $v->{$optionValue} }}"  @if(isset($value) && $value == $v->{$optionValue}) selected @endif>
+      @else
+      <option value="{{ $v->{$optionValue} }}" @if(isset($value) && $value->find($v->{$optionValue})) selected @endif>
+      @endif
       {{ $v->{$optionLabel} }}
     </option>
     @else
