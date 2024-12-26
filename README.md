@@ -80,3 +80,19 @@ composer require wangta69/laravel-components
 <x-pondol::validation-fail.custom />
 ```
 
+
+### Directive
+#### @checkedtrue
+> condition이 True 이면 checked 출력ㄱ
+```
+<input type="checkbox" @checkedtrue(condition)>
+```
+
+#### @iftrue
+```
+<input type="checkbox" @iftrue(condition, 'checked')>
+```
+#### inarray
+```
+<input type="checkbox" @inarray('key', 'array', 'checked')>
+```

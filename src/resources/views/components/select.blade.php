@@ -1,4 +1,4 @@
-<select {{ $attributes ->except(['options', 'option-label', 'option-value']) }}>
+<select {{ $attributes->except(['options', 'option-label', 'option-value']) }}>
   @foreach($options as $k=>$v)
     @if(isset($optionLabel)) 
       @if(gettype($value) == 'string') 
