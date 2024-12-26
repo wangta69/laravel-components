@@ -1,8 +1,8 @@
 {
     "name": "wangta69/laravel-components",
     "description": "Laravel Components",
-    "keywords": ["laravel", "components"],
-    "homepage": "https://www.onstory.fun/doc/programming/laravel/package.components",
+    "keywords": ["laravel", "components", "form", "directive"],
+    "homepage": "https://www.onstory.fun/packages/laravel-components",
     "license": "MIT",
     "authors": [
       {
